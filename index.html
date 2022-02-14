@@ -1,1 +1,39 @@
-<html><body><p>helo</p><script>if(window.location.href.replace("https://w7y.github.io/", "")=="goog")window.location.replace("https://www.google.com")</script></body></html>
+<html><body><p id="text">helo</p><script>
+  let safe=window.location.href.includes("?safe");
+    
+  if(window.location.href.includes("goog"))
+  {
+    if(!safe)
+    {
+      window.location.replace("https://www.google.com");
+    }
+    else
+    {
+        document.getElementById("text").innerHTML="https://www.google.com";
+    }
+  }
+  
+  if(window.location.href.includes("nujabes"))
+  {
+    if(!safe)
+    {
+      window.location.replace("https://www.youtube.com/watch_videos?video_ids=2sML2bq_WGw,8iP3J8jFYdM,7xZY8VJHqU4");
+    }
+    else
+    {
+        document.getElementById("text").innerHTML="https://www.youtube.com/watch_videos?video_ids=2sML2bq_WGw,8iP3J8jFYdM,7xZY8VJHqU4";
+    }
+  }
+  
+  if(window.location.href.includes("nujabesX"))
+  {
+    if(!safe)
+    {
+      window.location.replace("https://www.youtube.com/watch_videos?video_ids=5yYMicbSf98,PEWZL6VPBiA,lX8QVBl-ZG0,0Jg74p6D2iU");
+    }
+    else
+    {
+        document.getElementById("text").innerHTML="https://www.youtube.com/watch_videos?video_ids=5yYMicbSf98,PEWZL6VPBiA,lX8QVBl-ZG0,0Jg74p6D2iU";
+    }
+  }
+  </script></body></html>
