@@ -26,6 +26,8 @@ loop = setInterval(() => {
                 window.location.replace(links[i]);
             else
                 document.getElementById("text").innerHTML=links[i];
+          
+            clearInterval(loop);
         }
     }
 
