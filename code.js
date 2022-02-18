@@ -21,7 +21,7 @@ loop = setInterval(() => {
             document.getElementById("text3").innerHTML="";
             document.getElementById("text4").innerHTML="";
 
-            if(!safe)
+            if(!window.location.href.includes("?safe"))
                 window.location.replace(links[i]);
             else
                 document.getElementById("text").innerHTML=links[i];
