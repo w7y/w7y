@@ -16,6 +16,7 @@ loop = setInterval(() => {
     {
         if(window.location.href.includes(keywords[i]))
         {
+            document.getElementById("text").innerHTML="";
             document.getElementById("text1").innerHTML="";
             document.getElementById("text2").innerHTML="";
             document.getElementById("text3").innerHTML="";
